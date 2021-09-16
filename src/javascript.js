@@ -3,13 +3,11 @@ function showWeather(response) {
   document.querySelector(
     "#city"
   ).innerHTML = `${response.data.name}, ${response.data.sys.country}`;
-
   document.querySelector("#main-temperature").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
-
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
