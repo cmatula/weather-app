@@ -1,0 +1,98 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: lightgrey;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-variant: small-caps;
+}
+h2 {
+  font-size: 44px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+p {
+  margin: 0;
+}
+footer {
+  text-align: center;
+}
+
+.weather-app {
+  max-width: 800px;
+  display: block;
+  margin: 30px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: url(../images/background2.png);
+
+  box-shadow: 10px 10px 38px 1px rgba(0, 0, 0, 0.5);
+}
+
+.search-panel {
+  margin: 0 60px;
+  padding: 0;
+}
+
+.search-btn {
+  background: #fff;
+  width: 130%;
+}
+
+.location-btn {
+  background: #fff;
+  width: 180%;
+}
+
+.enter-city-box {
+  width: 105%;
+}
+
+.enter-city-box,
+.search-btn,
+.location-btn {
+  line-height: 40px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.city-weather-info {
+  padding: 10px;
+  margin: 40px 25px;
+}
+
+.other-weather-info {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.units {
+  font-size: 18px;
+  position: relative;
+  top: -20px;
+}
+
+.main-city-col {
+  text-align: right;
+}
+
+.weather-icons {
+  width: 80px;
+}
+.forecast-weather {
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.726);
+}
+.day-forecast {
+  text-align: center;
+
+  margin: 0;
+  line-height: 1.5;
+}
