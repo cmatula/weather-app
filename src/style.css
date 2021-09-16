@@ -5,8 +5,9 @@ body {
 
 h1 {
   margin-bottom: 20px;
+  margin-left: 30px;
   font-size: 30px;
-  text-align: center;
+
   font-variant: small-caps;
 }
 h2 {
@@ -15,9 +16,14 @@ h2 {
   margin-top: 5px;
 }
 
+input[type="text"] {
+  width: 400px;
+}
+
 p {
   margin: 0;
 }
+
 footer {
   text-align: center;
 }
@@ -33,28 +39,14 @@ footer {
   box-shadow: 10px 10px 38px 1px rgba(0, 0, 0, 0.5);
 }
 
-.search-panel {
-  margin: 0 60px;
-  padding: 0;
-}
-
-.search-btn {
-  background: #fff;
-  width: 130%;
-}
-
-.location-btn {
-  background: #fff;
-  width: 180%;
-}
-
-.enter-city-box {
-  width: 105%;
+.search-form {
+  margin-left: 30px;
 }
 
 .enter-city-box,
 .search-btn,
 .location-btn {
+  background: #fff;
   line-height: 40px;
   border-radius: 5px;
   border: none;
@@ -81,7 +73,7 @@ footer {
 }
 
 .weather-icons {
-  width: 80px;
+  width: 60px;
 }
 .forecast-weather {
   border: none;

@@ -25,40 +25,35 @@
     <div class="container">
       <div class="weather-app">
         <h1>YourWeather</h1>
+        <div class="search-box">
+          <form id="search-form" class="search-form">
+            <input
+              type="text"
+              name="Enter-city"
+              autofocus="on"
+              autocomplete="off"
+              class="enter-city-box"
+              placeholder="🔎 Enter your city"
+              id="search-city-input"
+            />
 
-        <form id="search-form">
-          <div class="row search-panel">
-            <div class="col-9">
-              <input
-                type="text"
-                name="Enter-city"
-                autofocus="on"
-                autocomplete="off"
-                class="enter-city-box"
-                placeholder="🔎 Enter your city"
-                id="search-city-input"
-              />
-            </div>
-            <div class="col-2">
-              <input
-                type="submit"
-                class="search-btn"
-                id="search-button"
-                value="Search"
-              />
-            </div>
-            <div class="col-1">
-              <input
-                type="button"
-                class="location-btn"
-                id="location-button"
-                value="📍"
-              />
-            </div>
-          </div>
-        </form>
+            <input
+              type="submit"
+              class="search-btn"
+              id="search-button"
+              value="Search"
+            />
+
+            <input
+              type="button"
+              class="location-btn"
+              id="location-button"
+              value="📍"
+            />
+          </form>
+        </div>
         <div class="row city-weather-info">
-          <div class="col-4">
+          <div class="col-md-4">
             <h2>
               <span id="main-temperature"></span>
               <span class="units">
@@ -73,10 +68,10 @@
             </p>
           </div>
 
-          <div class="col-2 picture-col">
+          <div class="col-md-2 picture-col">
             <img id="main-weather-picture" />
           </div>
-          <div class="col-6 main-city-col">
+          <div class="col-md-6 main-city-col">
             <h2 id="city"></h2>
 
             <p>
