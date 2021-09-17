@@ -65,6 +65,10 @@ footer {
   font-size: 16px;
 }
 
+#weather-description {
+  text-transform: capitalize;
+}
+
 .units {
   font-size: 18px;
   position: relative;
