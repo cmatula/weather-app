@@ -2,11 +2,11 @@ function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
-    hours = `0${currentHour}`;
+    hours = `0${hours}`;
   }
   let minutes = date.getMinutes();
   if (minutes < 10) {
-    minutes = `0${currentMinutes}`;
+    minutes = `0${minutes}`;
   }
   let days = [
     "Sunday",
@@ -41,6 +41,8 @@ function showWeather(response) {
   document.querySelector(
     "#main-weather-picture"
   ).src = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
+  document.querySelector("#main-weather-picture").alt =
+    response.data.weather[0].description;
 }
 
 function searchCity(city) {
