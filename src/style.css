@@ -16,7 +16,7 @@ h2 {
   margin-top: 5px;
 }
 
-input[type="text"] {
+input[type="search"] {
   width: 250px;
   padding: 0 10px;
 }
@@ -77,6 +77,12 @@ footer {
 
 .main-temperature-info {
   text-align: right;
+}
+
+.main-temperature-info .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
 }
 
 .main-picture {
