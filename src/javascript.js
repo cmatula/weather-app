@@ -21,6 +21,33 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="col">
+              <div class="weather-forecast-date">${day}</div>
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                alt="sun picture"
+                class="weather-icons"
+              />
+              <div class="weather-forecast-temperature">
+                <strong class="weather-temperature-forecast-day">30˚</strong> /
+                <span class="weather-forecast-temperature-night">18˚</span>
+              </div>
+            </div>
+          `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showWeather(response) {
   console.log(response.data);
   document.querySelector(
@@ -105,3 +132,5 @@ let currentLocationButton = document.querySelector("#location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Warsaw");
+
+displayForecast();
