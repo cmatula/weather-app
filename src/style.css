@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  background: rgb(245, 240, 240);
+  background: url(../images/background2.png);
 }
 
 h1 {
@@ -17,7 +17,7 @@ h2 {
 }
 
 input[type="search"] {
-  width: 250px;
+  width: 300px;
   padding: 0 10px;
 }
 
@@ -30,9 +30,7 @@ footer {
   display: block;
   margin: 30px auto;
   padding: 40px;
-  border-radius: 20px;
-  border: 2px solid rgba(23, 27, 46, 0.781);
-  background: url(../images/background2.png);
+  border-radius: 8px;
 
   box-shadow: 10px 10px 38px 1px rgba(0, 0, 0, 0.5);
 }
@@ -45,9 +43,10 @@ footer {
 .search-btn,
 .location-btn {
   background: #fff;
+  margin: 0;
   line-height: 40px;
-  border-radius: 5px;
-  border: 1px solid darkgrey;
+  border-radius: 3px;
+  border: none;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -98,10 +97,9 @@ footer {
 .forecast-weather {
   border: none;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 8px;
   text-align: center;
   margin: 0;
   line-height: 1.5;
-
-  background: rgba(255, 255, 255, 0.904);
+  border: 1px black solid;
 }
