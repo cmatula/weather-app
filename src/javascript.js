@@ -122,34 +122,6 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchCurrentLocation);
 }
 
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let city = document.querySelector("#city");
-  city = city.innerHTML;
-  celciusTemperature.classList.remove("active");
-  fahrenheitTemperature.classList.add("active");
-  let apiKey = "a6e2395246505358e7bef9273f106845";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-  axios.get(apiUrl).then(showWeather);
-}
-
-function goBackToCelcius(event) {
-  event.preventDefault();
-  let city = document.querySelector("#city");
-  city = city.innerHTML;
-  celciusTemperature.classList.add("active");
-  fahrenheitTemperature.classList.remove("active");
-  let apiKey = "a6e2395246505358e7bef9273f106845";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showWeather);
-}
-
-let fahrenheitTemperature = document.querySelector("#fahrenheit-temperature");
-fahrenheitTemperature.addEventListener("click", convertToFahrenheit);
-
-let celciusTemperature = document.querySelector("#celcius-temperature");
-celciusTemperature.addEventListener("click", goBackToCelcius);
-
 let searchCityWeather = document.querySelector("#search-form");
 searchCityWeather.addEventListener("submit", handleSubmit);
 
