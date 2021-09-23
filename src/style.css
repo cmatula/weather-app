@@ -17,7 +17,6 @@ h2 {
 }
 
 input[type="search"] {
-  width: 300px;
   padding: 0 10px;
 }
 
@@ -30,8 +29,9 @@ footer {
   display: block;
   margin: 30px auto;
   padding: 40px;
+  border: 1px solid #7c9dbd;
   border-radius: 8px;
-
+  background: #fff;
   box-shadow: 10px 10px 38px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -42,12 +42,18 @@ footer {
 .enter-city-box,
 .search-btn,
 .location-btn {
-  background: #fff;
+  background: #e3edf8;
   margin: 0;
   line-height: 40px;
-  border-radius: 3px;
-  border: none;
+  border-radius: 10px;
+  border: 1px solid #7c9dbd;
+
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.location-btn,
+.search-btn {
+  text-align: center;
 }
 
 .city-weather-info {
@@ -81,14 +87,14 @@ footer {
 }
 
 .main-picture {
-  height: 130px;
-  width: 130px;
+  height: 160px;
+  width: 160px;
 }
 
 .main-temperature {
   font-size: 60px;
   font-weight: normal;
-  line-height: 130px;
+  line-height: 160px;
 }
 
 .weather-icons {
@@ -101,5 +107,5 @@ footer {
   text-align: center;
   margin: 0;
   line-height: 1.5;
-  border: 1px black solid;
+  border: 1px #7c9dbd solid;
 }
